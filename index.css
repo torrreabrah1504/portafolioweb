@@ -1,0 +1,141 @@
+body{
+    height: 100vh;
+    background-color: white;
+}
+/*Cotenedor de portafolio*/
+#contenedor{
+    height: 100%;
+    width: auto;
+}
+/*contenedor de titulo y nav*/
+#contenedor-navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+   
+}
+/*titulo*/
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 50%;
+    margin: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: rgb(43, 18, 18);
+    padding: 0.5rem;
+}
+/*barra nav*/
+#barra-nav{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    background-color: rgb(92, 96, 97);
+}
+
+.link-nav{
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+.link-nav:hover{
+    transition: all 0.30s;
+    background-color:rgb(176, 185, 187);
+}
+/*Div de imagen*/
+#contenedor-img{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 60%;
+    background-image: url(https://wallpapers.com/images/featured/fondo-de-pantalla-para-laptop-1366-x-768-wlqt8z8wc0k9g2fm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    color: white;
+}
+/*Titulo img*/
+#title-2{
+    margin: 0%;
+    margin-top: 10%;
+    font-size: 2rem;
+}
+.svg{
+    height: 30%;
+}
+#button-title-2{
+    margin: 1%;
+    height: 10%;
+    width: 10%;
+    color: white;
+    font-size: 1.1rem;
+    border-color: black;
+    background-color: rgb(43, 18, 18);
+} 
+#button-title-2:hover{
+    cursor: pointer;
+    transition: all 0.30s;
+    background-color: rgb(114, 41, 41);
+}
+/*Section*/
+.section-text{
+    display: flex;  
+    margin: 1%;
+}
+.div-section{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 3px;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(43, 18, 18);
+    color: white;
+}
+/*svg de section*/
+.svg-section{
+    height: 5rem;
+}
+.title-section{
+    background-color: white;
+    color: black;
+}
+/*pie de pag*/
+#pie-pag{
+    text-align: center;
+    color: black;
+}
+/*Ajuste de pantalla*/
+@media (max-width:768px){
+    #contenedor-img{
+        height: 28%;
+    }
+    .section-text{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    #button-title-2{
+        width: 50%;
+        height: auto;
+    }
+    #barra-nav{
+        width: 91%;
+        gap: 1.5rem;
+    }
+    #title-2{
+        color: rgba(255, 255, 255, 0.952);
+    }
+}
+
